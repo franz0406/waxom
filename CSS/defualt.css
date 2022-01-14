@@ -1,0 +1,77 @@
+@import url(./common.css);
+
+/* ----- HEADER ----- */
+
+header {
+    position: fixed;
+    left: 0; right: 0;
+    padding:40px 0;
+    z-index: 999;
+}
+header .logo {
+    float: left;
+}
+header .logo > a {
+    display: block;
+    width:171px; height:56px;
+    background: url(../images/logo-white.png) no-repeat;
+    text-indent: -9999em;
+}
+header nav {
+    float: right;
+}
+header nav > ul {
+    float: left;
+}
+header nav > ul > li {
+    float: left;
+}
+header nav > ul.main_menu > li {
+    margin-right: 29px;
+}
+header nav > ul.main_menu > li {
+    margin-right: 29px;
+}
+header nav > ul.header_icons > li {
+    margin-right: 25px;
+}
+header nav > ul.header_icons > li:last-child {
+    margin-right: 0px;
+}
+header nav > ul > li > a {
+    font-size:14px;
+    line-height: 56px;
+    color:#Fff;
+    transition: color 0.2s linear;
+}
+header nav > ul > li > a:hover,
+header nav > ul > li > a.active {
+    color:#c7b299;
+}
+
+/* ----- MAIN SLIDER ----- */
+
+.main_slider > .slider_list > li {
+    /* height: JS code ; */
+    width:100%;
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+}
+.main_slider > .slider_list > li.slide01 { 
+    background-image: url(../images/mainslide_01.jpg); 
+}
+.main_slider > .slider_list > li.slide02 { 
+    background-image: url(../images/mainslide_02.jpg); 
+}
+.main_slider > .slider_list > li.slide03 { 
+    background-image: url(../images/mainslide_03.jpg); 
+}
+
+.main_slider > .slider_list > li > div {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+}
