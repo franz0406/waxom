@@ -66,6 +66,25 @@ body {
     -webkit-font-smoothing: antialiased; 
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif; 
+}
+
+.content_tit {
+    font-size:30px;
+    font-weight: 600;
+    color:#555;
+}
+
+.content_desc {
+    margin: 0 auto;
+    padding:23px 33px;
+    width:65%;
+    font-size:16px;
+    font-weight: 300;
+    color:#8c8c8c;
+}
+
 /* LAYOUT */
 
 .grid { width:100%; max-width:1170px; margin: 0 auto; padding:0 15px;}
@@ -81,4 +100,21 @@ body {
     border-radius: 3px;
     background: #998675;
     box-shadow:inset 0 -5px #736357;
+    transition: background-color 0.2s linear;
+}
+.btn:hover {
+    background-color: #736357;
+}
+
+/* ANIMATIONS */
+
+@keyframes showUp {
+    from {
+        transform:translateY(40%);
+        opacity: 0;
+    }
+    to {
+        transform:translateY(0);
+        opacity: 1;
+    }
 }
