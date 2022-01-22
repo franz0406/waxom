@@ -223,4 +223,139 @@ header nav > ul > li > a.active {
     text-align: center;
 }
 
+/* ----- TEXT_BOXES SECTION ----- */
 
+.text_boxes {
+    padding:50px 0;
+    background: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.text_boxes .box_content {
+    float: left;
+}
+
+.text_boxes .box_content > h4 {
+    color:#fff;
+    font-size:28px;
+}
+
+.text_boxes .box_content > h4 > span {
+    color:#c7b299;
+}
+
+.text_boxes .box_content > p {
+    font-size:18px;
+    font-weight: 300;
+    color:#615855;
+}
+
+.text_boxes a {
+    float: right;
+}
+
+/* ----- LATEST PROJECT SECTION ----- */
+
+.latest_project > .project_wrap {
+    text-align: center;
+}
+
+.latest_project > .project_wrap > input {
+    display: none;
+}
+
+.latest_project > .project_wrap > input:checked + label {
+    background: #998675;
+    color:#fff;
+}
+
+.latest_project > .project_wrap > label {
+    display: inline-block;
+    margin: 0 3px;
+    padding:0 18px;
+    font-size:14px;
+    font-weight: 300;
+    color:#8c8c8c;
+    line-height: 32px;
+    border:1px solid #ebebeb;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.latest_project > .project_wrap > .project_list {
+    margin-top: 40px;
+}
+
+.latest_project > .project_wrap > .project_list > li {
+    float: left;
+    margin:0 30px 30px 0;
+    width:370px;
+}
+
+.latest_project > .project_wrap > .project_list > li * {
+    transition: 0.3s;    
+}
+
+.latest_project > .project_wrap > .project_list > li:nth-child(3n) {
+    margin:0 0 30px 0;
+}
+
+.latest_project > .project_wrap > .project_list > li > .img_wrap {
+    position: relative;
+}
+
+.latest_project > .project_wrap > .project_list > li > .img_wrap > img {
+    width:100%;
+}
+
+.latest_project > .project_wrap > .project_list > li > .img_wrap > .hover_contents {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    padding-top:116px;
+    text-align: center;
+    background: rgba(0,0,0, 0.7);
+    opacity: 0;    
+}
+.latest_project > .project_wrap > .project_list > li:hover > .img_wrap > .hover_contents {
+    opacity: 1;
+}
+
+.latest_project > .project_wrap > .project_list > li > .img_wrap > .hover_contents > a {
+    margin: 0 15px;
+    font-size:26px;
+    color:#fff;
+}
+.latest_project > .project_wrap > .project_list > li > .img_wrap > .hover_contents > a:hover {
+    color:#c7b299;
+}
+
+.latest_project > .project_wrap > .project_list > li > .content {
+    background: #fbfaf8;
+    padding:24px 29px;
+    text-align: left;
+}
+
+.latest_project > .project_wrap > .project_list > li > .content > h4 {
+    font-size:20px;
+    color:#c7b299;
+    font-weight: 500;
+}
+
+.latest_project > .project_wrap > .project_list > li > .content > p {
+    font-size:14px;
+    color:#b8b8b8;
+    font-weight: 300;
+}
+
+.latest_project > .project_wrap > .project_list > li:hover > .content {
+    background: #362f2d;
+}
+
+.latest_project > .project_wrap > .project_list > li:hover > .content > h4 {
+    color:#fff;
+}
+
+.latest_project > .project_wrap > .project_list > li:hover > .content > p {
+    color:#c7b299;
+}
