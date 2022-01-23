@@ -255,6 +255,10 @@ header nav > ul > li > a.active {
 
 /* ----- LATEST PROJECT SECTION ----- */
 
+.latest_project {
+    padding:80px 0;
+}
+
 .latest_project > .project_wrap {
     text-align: center;
 }
@@ -285,12 +289,15 @@ header nav > ul > li > a.active {
 
 .latest_project > .project_wrap > .project_list {
     margin-top: 40px;
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
 }
 
 .latest_project > .project_wrap > .project_list > li {
-    float: left;
-    margin:0 30px 30px 0;
     width:370px;
+    overflow: hidden;
+    animation: fadeIn 0.3s forwards;
 }
 
 .latest_project > .project_wrap > .project_list > li * {
@@ -359,3 +366,91 @@ header nav > ul > li > a.active {
 .latest_project > .project_wrap > .project_list > li:hover > .content > p {
     color:#c7b299;
 }
+
+.latest_project > .project_wrap > #filter_all:checked ~ .project_list > li {
+    display: block;
+    animation: fadeIn 0.3s forwards;
+}
+.latest_project > .project_wrap > #filter_mobile:checked ~ .project_list > li:not(.mobile) {
+    display: none;
+    animation: fadeOut 0.3s forwards;
+}
+.latest_project > .project_wrap > #filter_illust:checked ~ .project_list > li:not(.illust) {
+    display: none;
+    animation: fadeOut 0.3s forwards;
+}
+.latest_project > .project_wrap > #filter_web:checked ~ .project_list > li:not(.web) {
+    display: none;
+    animation: fadeOut 0.3s forwards;
+}
+.latest_project > .project_wrap > #filter_photo:checked ~ .project_list > li:not(.photo) {
+    display: none;
+    animation: fadeOut 0.3s forwards;
+}
+
+.latest_project > .project_wrap > .load_more {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* ----- VIDEO SECTION ----- */
+
+.video {
+    position: relative;
+    height:705px;
+    background: url(../images/video_bg.jpg)no-repeat center center/cover;
+}
+
+.video > .contents {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.video > .contents * {
+    color:#fff;
+}
+
+.video > .contents > span {
+    color:#c7b299;
+}
+
+.video > .contents > .icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0, 0.2);
+    text-align: center;
+    font-size:4em;
+    line-height: 100px;
+    border-radius:50%;
+}
+
+.video > .contents > h3 {
+    margin-top: 40px;
+}
+
+.video > #overlay {
+    display: none;
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0,0,0, 0.8);
+    z-index: 9999;
+}
+
+.video > #overlay > .inner {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video > #overlay > .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color:#fff;
+    font-size:30px;
+}
+
+/* ----- EXCELLENT MOBILE SECTION ----- */
