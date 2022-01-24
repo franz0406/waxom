@@ -454,3 +454,118 @@ header nav > ul > li > a.active {
 }
 
 /* ----- EXCELLENT MOBILE SECTION ----- */
+
+.excellent_mobile {
+    padding-top: 80px;
+    background: #fbfaf8;
+}
+
+.excellent_mobile img {
+    float: left;
+}
+
+.excellent_mobile .contents {
+    margin-top: 115px;
+    width:670px;
+    float: right
+}
+
+.excellent_mobile .contents > h3,
+.excellent_mobile .contents > p {
+    width:100%;
+    text-align: left;
+}
+
+.excellent_mobile .contents > p {
+    padding: 23px 0;
+}
+
+.excellent_mobile .contents > ul {
+    margin-left: 50px;
+}
+
+.excellent_mobile .contents > ul > li {
+    margin-bottom: 18px;
+    font-weight: 300;
+    color:#8c8c8c;
+    line-height: 21px;
+}
+
+.excellent_mobile .contents > ul > li > span {
+    display: inline-block;
+    margin-right: 28px;
+    width:21px;
+    height:21px;
+    background: url(../images/sprites.png) no-repeat -402px -89px;
+    text-indent: -9999em;
+}
+
+/* ----- COUNTERS SECTION ----- */
+
+.counters {
+    padding:69px 0 60px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+    text-align: center;
+}
+
+.counters ul {
+    display:inline-block;
+}
+
+.counters ul > li {
+    float:left;
+    width:170px;
+    margin: 0 15px;
+}
+
+.counters ul > li > .icon {
+    display: inline-block;
+    height:44px;
+    text-indent: -9999em;
+    background: url(../images/sprites.png)no-repeat;
+}
+
+.counters ul > li > .icon.client {
+    width:44px;
+    background-position:0 0;
+}
+.counters ul > li > .icon.coffee {
+    width:48px;
+    background-position:-196px 0;
+}
+.counters ul > li > .icon.post {
+    width:44px;
+    background-position:-399px 0;
+}
+.counters ul > li > .icon.like {
+    width:44px;
+    background-position:-599px 0;
+}
+.counters ul > li > .icon.launched {
+    width:54px;
+    background-position:-793px 0;
+}
+
+.counters ul > li > h3 {
+    margin: 30px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:48px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.counters ul > li > h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    color:#c7b299;
+}
+
+.counters ul > li > .bar {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+}
