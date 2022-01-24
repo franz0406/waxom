@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     videoModal.style.display = "none";
   })
 
+  // 숫자 애니메이션
   const animateNum = document.querySelectorAll(".clear > li > h3");
 
   var waypoint = new Waypoint({
@@ -30,5 +31,20 @@ document.addEventListener("DOMContentLoaded", function(){
     },
     offset: '50%'
   })
+
+  // Recent post 섹션 BX Slider
+  const postList = document.querySelector(".posts_slider > li:first-of-type"),
+        listWidth = postList.offsetWidth;  
+
+  $(document).ready(function(){
+    $('.posts_slider').bxSlider({      
+      minSlides: 1,
+      maxSlides: 3,
+      slideMargin: 30,
+      moveSlides: 1,
+      slideWidth: 370,
+      pager: false
+    });
+  });
 
 });
