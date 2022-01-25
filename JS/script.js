@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
+  // 비디오 섹션
   const playVideoBtn = document.querySelector(".video > .contents > .icon");
   const videoModal = document.getElementById("overlay");
   const closeVideoBtn = videoModal.querySelector(".close");
@@ -12,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function(){
     videoModal.style.display = "none";
   })
 
-  // 숫자 애니메이션
+  // 숫자 증가 애니메이션
   const animateNum = document.querySelectorAll(".clear > li > h3");
 
-  var waypoint = new Waypoint({
+  var counterWaypoint = new Waypoint({
     element: document.querySelector('.counters'),
     handler: function(direction) {
       animateNum.forEach((item)=>{
@@ -29,8 +30,18 @@ document.addEventListener("DOMContentLoaded", function(){
         this.destroy();
       })
     },
-    offset: '50%'
-  })
+    offset: '70%'
+  });
+
+  // Service 섹션 애니메이션 실행할 클래스 추가
+  const serviceSection = document.querySelector('.services');
+  const ServiceWaypoint = new Waypoint({
+    element: document.querySelector('.services'),
+    handler: function(direction) {
+      serviceSection.classList.add("active");
+    },
+    offset: '80%'
+  });
 
   // Recent post 섹션 BX Slider
   const postList = document.querySelector(".posts_slider > li:first-of-type"),
@@ -43,8 +54,22 @@ document.addEventListener("DOMContentLoaded", function(){
       slideMargin: 30,
       moveSlides: 1,
       slideWidth: 370,
-      pager: false
+      pager: false,
+      shrinkItems: true,
+      auto: true,
+      autoHover: true
     });
   });
+
+  // 헤더 고정
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", function() {
+
+    if( this.scrollY > 0){
+      header.classList.add("sticky");      
+    }else{
+      header.classList.remove("sticky");  
+    }
+  })
 
 });
